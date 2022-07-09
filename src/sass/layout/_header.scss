@@ -1,0 +1,43 @@
+.header__container {
+    display: flex;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    margin-right: 24px;
+    margin-left: auto;
+}
+
+.menu__item {}
+
+.menu__item+.menu__item {
+    margin-left: 48px;
+}
+
+.memu__link {
+    cursor: pointer;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $colorText;
+    font-size: 18px;
+
+
+}
+
+.button {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 32px 24px;
+    background-color: $colorPrimary;
+}
+
+.header__button {
+    margin-left: auto;
+}

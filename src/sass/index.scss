@@ -1,2 +1,32 @@
-@import './common';
-@import './example';
+// Утилиты
+@import "./utils/mixins";
+@import "./utils/colors";
+@import "./utils/bg-colors";
+@import "./utils/shadows";
+@import "./utils/visually-hidden";
+
+// Базовые стили
+@import "./base/reset";
+@import "./base/body-style";
+@import "./base/container";
+@import "./base/section";
+
+// Компоненты
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/social";
+@import "./components/titles";
+// Секции
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/work-exp";
+@import "./layout/philosophy";
+@import "./layout/skillset";
+@import "./layout/clients";
+@import "./layout/projects";
+@import "./layout/instagram";
+@import "./layout/dribbble";
+@import "./layout/testimonials";
+@import "./layout/photography";
+@import "./layout/contact-me";
+@import "./layout/footer";
