@@ -68,7 +68,7 @@ body {
   padding-left: 15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
   .container {
     padding-right: 40px;
     padding-left: 40px;
@@ -88,7 +88,7 @@ section {
   padding-bottom: 48px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
   section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -139,6 +139,11 @@ section {
   padding-bottom: 32px;
   color: #FFFFFF;
   font-size: 18px;
+}
+
+.memu__link:hover, .memu__link:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .button {
