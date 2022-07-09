@@ -1,0 +1,56 @@
+.work-exp {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.work-exp__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $colorTextGrey;
+}
+
+.work-exp__heading {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: $colorText;
+}
+
+.work-exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-exp-list__number {
+  font-size: 117px;
+  line-height: 141px;
+  color: $colorTextGrey;
+}
+
+.work-exp-list__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  color: $colorText;
+}
+
+.work-exp-list__title--green {
+  color: $colorGreenAccent;
+}
+
+.work-exp-list__title--blue {
+  color: $colorBlueAccent;
+}
+
+.work-exp-list__title--pink {
+  color: $colorPinkAccent;
+}
+
+.work-exp-list__text {
+  font-size: 16px;
+  color: $colorTextGrey;
+}
