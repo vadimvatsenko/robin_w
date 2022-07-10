@@ -57,7 +57,7 @@ address {
 body {
   font-family: "Sen", sans-serif;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 1.5;
   font-size: 18px;
 }
@@ -110,9 +110,18 @@ section {
   }
 }
 
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 .header__container {
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+  }
 }
 
 .header__nav {
@@ -122,10 +131,17 @@ section {
   width: 100%;
 }
 
-.menu {
-  display: flex;
-  margin-right: 24px;
-  margin-left: auto;
+@media screen and (min-width: 320px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    margin-right: 24px;
+    margin-left: auto;
+  }
 }
 
 .menu__item + .menu__item {
@@ -136,49 +152,97 @@ section {
   cursor: pointer;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
-}
-.memu__link:hover, .memu__link:focus {
-  transform: scale(1.2);
-}
-
-.button {
-  font-weight: 700;
-  font-size: 18px;
-  padding: 32px 24px;
-  background-color: #5221E6;
-
 }
 
 .header__button {
-  margin-left: auto;
-
-.photography {
-  padding: 48px 20px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 32px 24px;
+    background-color: #5221e6;
+    margin-left: auto;
+  }
 }
 
-.photography__text {
-  display: block;
-  color: #8491a0;
-  margin-top: 24px;
+.no-scroll {
+  position: fixed;
 }
 
-.photography__btn-list {
+.mob-menu {
+  position: fixed;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: scroll;
+  padding: 60px 15px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #181823;
+  transform: translateX(0);
+  transition: translateX 1000ms;
+}
+.mob-menu.is-hidden {
+  transform: translateX(-100%);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
-.photography__btn {
-  margin-right: 24px;
-  margin-bottom: 24px;
-  border: 1px solid #5221E6;
-  background-color: #000000;
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
-.photography__btn:hover, .photography__btn:focus {
-  background-color: #5221E6;
 
+.mob-menu__button {
+  display: block;
+  margin-top: auto;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 32px 24px;
+  background-color: #5221e6;
+}
 
+.mob-menu__item + .mob-menu__item {
+  margin-top: 30px;
+}
+
+.mob-menu__link {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.menu-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social__item + .social__item {
+  margin-left: 10px;
+}
+
+.hero {
+  min-height: 362px;
+  background-image: url(../images/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .work-exp__title {
@@ -255,4 +319,87 @@ section {
 .work-exp-list__text {
   font-size: 16px;
   color: #8491a0;
+}
 
+.skillset__title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+@media screen and (min-width: 768px) {
+  .skillset__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.skillset__text {
+  color: #8491a0;
+  line-height: 1.5;
+  padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .skillset__text {
+    font-size: 18px;
+  }
+}
+
+.skillset-list {
+  margin-top: 69px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) {
+  .skillset-list__item {
+    width: calc((100% - 48px) / 2);
+  }
+}
+.skillset-list__title {
+  margin-top: 24px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.skillset-list__text {
+  margin-top: 12px;
+  color: #8491a0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .skillset-wrap {
+    display: flex;
+  }
+  .skillset-list {
+    margin-top: 0;
+    margin-left: 72px;
+  }
+}
+.photography {
+  padding: 48px 20px;
+}
+
+.photography__text {
+  display: block;
+  color: #8491a0;
+  margin-top: 24px;
+}
+
+.photography__btn-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photography__btn {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #5221e6;
+  background-color: #000000;
+}
+.photography__btn:hover, .photography__btn:focus {
+  background-color: #5221e6;
+}/*# sourceMappingURL=index.css.map */

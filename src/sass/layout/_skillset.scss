@@ -1,0 +1,53 @@
+.skillset__title {
+  color: $colorText;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.9;
+  @include tablet {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.skillset__text {
+  color: $colorTextGrey;
+  line-height: 1.5;
+  padding-top: 16px;
+  @include tablet {
+    font-size: 18px;
+  }
+}
+
+.skillset-list {
+  margin-top: 69px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  &__item {
+    @include tablet {
+      width: calc((100% - 48px) / 2);
+    }
+  }
+  &__title {
+    margin-top: 24px;
+    color: $colorText;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  &__text {
+    margin-top: 12px;
+    color: $colorTextGrey;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@include desktop {
+  .skillset-wrap {
+    display: flex;
+  }
+  .skillset-list {
+    margin-top: 0;
+    margin-left: 72px;
+  }
+}
