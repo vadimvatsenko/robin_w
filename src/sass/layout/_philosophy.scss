@@ -1,0 +1,45 @@
+.philosophy {
+  background-color: $colorPeachAccent;
+}
+
+.philosophy__container {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.philosophy__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.philosophy__title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: $colorLevel1;
+
+  @include tablet {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.philosophy__text {
+  font-size: 18px;
+  color: $colorPhilosophyText;
+}
+
+.philosophy__link {
+  width: 116px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $colorLevel1;
+  border-bottom: 1px solid $colorTextGrey;
+}
