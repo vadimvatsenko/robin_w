@@ -37,8 +37,10 @@
 }
 
 .philosophy__text {
-  margin-bottom: 90px;
-
+  margin-bottom: 67px;
+  @include desktop {
+    margin-bottom: 134px;
+  }
   font-size: 18px;
   color: $colorPhilosophyText;
 }
@@ -50,4 +52,14 @@
   line-height: 1.5;
   color: $colorLevel1;
   border-bottom: 1px solid $colorTextGrey;
+}
+
+.team__picture {
+  min-width: 320px;
+  @include tablet {
+    min-width: 384px;
+  }
+  @include desktop {
+    min-width: 720px;
+  }
 }
