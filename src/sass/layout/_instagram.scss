@@ -1,0 +1,61 @@
+.instagram {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fbe4ff;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.instagram__wrap-text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.instagram__title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: $colorLevel1;
+  @include tablet {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.instagram__text {
+  margin-bottom: 134px;
+
+  font-size: 18px;
+  color: $colorPhilosophyText;
+}
+
+.instagram__link {
+  width: 128px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $colorLevel1;
+  border-bottom: 1px solid $colorTextGrey;
+}
+
+.instagram__image {
+  @include tablet {
+    min-width: 384px;
+  }
+  @include desktop {
+    min-width: 720px;
+  }
+}
