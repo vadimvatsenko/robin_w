@@ -1,8 +1,10 @@
+
 @include desktop {
   .clients {
     padding-top: 0;
   }
 }
+
 
 .clients__list {
   display: flex;
@@ -13,6 +15,7 @@
 .container--variable {
   padding-left: 0;
   padding-right: 0;
+
   max-width: 100vw;
 }
 
@@ -27,12 +30,26 @@
   @include desktop {
     width: calc(100% / 3);
   }
+
+}
+
+.clients__item {
+  width: calc(100% / 2);
+  display: block;
+  min-width: 180px;
+  height: 140px;
+  border: 1px solid #434343;
+
 }
 
 .clients__link {
   display: flex;
   height: 100%;
+
   width: 100%;
+
+  min-width: 100%;
+
   align-items: center;
   justify-content: center;
 }
