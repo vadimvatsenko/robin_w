@@ -1,19 +1,25 @@
 .philosophy {
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: $colorPeachAccent;
-}
-
-.philosophy__container {
   display: flex;
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 }
 
-.philosophy__wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.philosophy__wrap-text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .philosophy__title {
@@ -31,6 +37,8 @@
 }
 
 .philosophy__text {
+  margin-bottom: 90px;
+
   font-size: 18px;
   color: $colorPhilosophyText;
 }
