@@ -20,11 +20,29 @@
         background-position: left center;
         background-size: 384px 650px;
 
+
+
         @include retinaBgImg {
             background-image: url(../images/hero-tab-2x.jpg);
         }
     }
+
+    @include desktop {
+        margin: 0 auto;
+        max-width: 1440px;
+        min-height: 814px;
+        background-image: url(../images/hero.jpg);
+        background-position: left center;
+        background-size: 750px 650px;
+        border-bottom: 1px dashed blue;
+        border-width: 5px;
+
+        @include retinaBgImg {
+            background-image: url(../images/hero-2x.jpg);
+        }
+    }
 }
+
 
 .hero-mobile {
     @include tablet {
@@ -32,12 +50,7 @@
     }
 }
 
-.hero__img {
-    // position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-}
+
 
 .hero__title {
     font-weight: 700;
@@ -72,5 +85,9 @@
 
     @media screen and (max-width:767px) {
         display: none;
+    }
+
+    @include desktop {
+        width: 738px;
     }
 }
