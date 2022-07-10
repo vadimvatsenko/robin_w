@@ -270,7 +270,6 @@ section {
   }
 }
 
-
 @media screen and (min-width: 1440px) {
   .hero {
     margin: 0 auto;
@@ -297,11 +296,13 @@ section {
 }
 
 
+
 .hero__img {
   left: 0;
   top: 0;
   width: 100vw;
 }
+
 
 
 .hero__title {
@@ -420,9 +421,9 @@ section {
   color: #8491a0;
 }
 
+
 .philosophy {
   background-color: #fff3e4;
-}
 
 .philosophy__container {
   display: flex;
@@ -532,6 +533,7 @@ img {
   height: auto;
 }
 
+
 @media screen and (min-width: 768px) {
   .testimonials-cont {
     display: flex;
@@ -623,7 +625,7 @@ img {
 }
 
 .photography {
-  padding: 48px 20px;
+  padding: 48px 0;
 }
 
 .photography__text {
@@ -633,16 +635,34 @@ img {
 }
 
 .photography__btn-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 148px 148px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .photography__btn-list {
+    display: flex;
+  }
 }
 
 .photography__btn {
-  margin-right: 24px;
-  margin-bottom: 24px;
+  padding: 12px 16px;
   border: 1px solid #5221e6;
   background-color: #000000;
 }
 .photography__btn:hover, .photography__btn:focus {
   background-color: #5221e6;
+}
+@media screen and (max-width: 767px) {
+  .photography__btn {
+    width: 148px;
+    height: 51px;
+  }
+}
+
+.photography__img-item:not(:last-child) {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=index.css.map */
