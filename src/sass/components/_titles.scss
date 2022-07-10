@@ -1,1 +1,10 @@
 // Заголовки
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  @include tablet {
+    font-size: 55px;
+    line-height: calc(66 / 55);
+  }
+}
