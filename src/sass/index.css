@@ -423,21 +423,36 @@ section {
 
 
 .philosophy {
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: #fff3e4;
 
+
 .philosophy__container {
+
   display: flex;
 }
-@media screen and (max-width: 768px) {
-  .philosophy__container {
+@media screen and (max-width: 767px) {
+  .philosophy {
     flex-direction: column;
   }
 }
 
-.philosophy__wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.philosophy__wrap-text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__wrap-text {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .philosophy__wrap-text {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .philosophy__title {
@@ -455,6 +470,7 @@ section {
 }
 
 .philosophy__text {
+  margin-bottom: 90px;
   font-size: 18px;
   color: #5b6876;
 }
