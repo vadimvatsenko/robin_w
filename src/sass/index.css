@@ -57,7 +57,7 @@ address {
 body {
   font-family: "Sen", sans-serif;
   background-color: #000000;
-  color: #ffffff;
+  color: #FFFFFF;
   line-height: 1.5;
   font-size: 18px;
 }
@@ -98,6 +98,19 @@ section {
   }
 }
 
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1875;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+
 .header__container {
   display: flex;
 }
@@ -123,7 +136,7 @@ section {
   cursor: pointer;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 18px;
 }
 .memu__link:hover, .memu__link:focus {
@@ -134,11 +147,38 @@ section {
   font-weight: 700;
   font-size: 18px;
   padding: 32px 24px;
-  background-color: #5221e6;
+  background-color: #5221E6;
+
 }
 
 .header__button {
   margin-left: auto;
+
+.photography {
+  padding: 48px 20px;
+}
+
+.photography__text {
+  display: block;
+  color: #8491a0;
+  margin-top: 24px;
+}
+
+.photography__btn-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photography__btn {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #5221E6;
+  background-color: #000000;
+}
+.photography__btn:hover, .photography__btn:focus {
+  background-color: #5221E6;
+
+
 }
 
 .work-exp__title {
@@ -215,4 +255,4 @@ section {
 .work-exp-list__text {
   font-size: 16px;
   color: #8491a0;
-}/*# sourceMappingURL=index.css.map */
+

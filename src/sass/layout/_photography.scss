@@ -1,0 +1,26 @@
+.photography {
+  padding: 48px 20px;
+}
+
+.photography__text {
+  display: block;
+  color: #8491a0;
+  margin-top: 24px;
+}
+
+.photography__btn-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photography__btn {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border: 1px solid $colorPrimary;
+  background-color: #000000;
+  &:hover,
+  &:focus {
+    background-color: $colorPrimary;
+  }
+}
+

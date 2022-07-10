@@ -1,9 +1,15 @@
-// .header {
-//     position: absolute;
-// }
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .header__container {
-    display: flex;
+    display: block;
+
+    @include tablet {
+        display: flex;
+    }
+
 }
 
 .header__nav {
@@ -11,15 +17,20 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
 }
 
 .menu {
-    display: flex;
-    margin-right: 24px;
-    margin-left: auto;
-}
+    @include mobile {
+        display: none;
+    }
 
-.menu__item {}
+    @include tablet {
+        display: flex;
+        margin-right: 24px;
+        margin-left: auto;
+    }
+}
 
 .menu__item+.menu__item {
     margin-left: 48px;
@@ -31,23 +42,90 @@
     padding-bottom: 32px;
     color: $colorText;
     font-size: 18px;
-
-
-    &:hover,
-    &:focus {
-        transform: scale(1.2);
-    }
-
-
 }
 
-.button {
+.header__button {
+    display: none;
+
+    @include tablet {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 32px 24px;
+        background-color: $colorPrimary;
+        margin-left: auto;
+    }
+}
+
+
+
+// мобильное меню
+.no-scroll {
+    position: fixed;
+}
+
+.mob-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 60px 15px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $colorLevel1;
+    transform: translateX(0);
+    transition: translateX 1000ms;
+
+    &.is-hidden {
+        transform: translateX(-100%);
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu-open-btn {
+    @include tablet {
+        display: none;
+    }
+}
+
+.mob-menu__button {
+    display: block;
+    margin-top: auto;
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     padding: 32px 24px;
     background-color: $colorPrimary;
+
 }
 
-.header__button {
-    margin-left: auto;
+.mob-menu__item+.mob-menu__item {
+    margin-top: 30px;
+}
+
+.mob-menu__link {
+    color: $colorText;
+    font-size: 24px;
+}
+
+.menu-close-btn {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.social__item+.social__item {
+    margin-left: 10px;
 }
