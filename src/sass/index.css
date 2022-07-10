@@ -269,6 +269,7 @@ section {
     background-image: url(../images/hero-tab-2x.jpg);
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero {
     margin: 0 auto;
@@ -292,6 +293,14 @@ section {
     display: none;
   }
 }
+
+
+.hero__img {
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
 
 .hero__title {
   font-weight: 700;
@@ -324,11 +333,14 @@ section {
   .hero-tablet {
     display: none;
   }
+
+
 }
 @media screen and (min-width: 1440px) {
   .hero-tablet {
     width: 738px;
   }
+
 }
 
 .work-exp__title {
@@ -512,6 +524,33 @@ section {
     margin-left: 72px;
   }
 }
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.container--variable {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.clients__item {
+  width: 50%;
+  display: block;
+  min-width: 180px;
+  height: 140px;
+  border: 1px solid #434343;
+}
+
+.clients__link {
+  display: flex;
+  height: 100%;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .photography {
   padding: 48px 20px;
 }
