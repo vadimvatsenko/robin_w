@@ -110,6 +110,7 @@ section {
   }
 }
 
+
 .header__container {
   display: flex;
 }
@@ -147,11 +148,11 @@ section {
   font-size: 18px;
   padding: 32px 24px;
   background-color: #5221E6;
+
 }
 
 .header__button {
   margin-left: auto;
-}
 
 .photography {
   padding: 48px 20px;
@@ -176,4 +177,65 @@ section {
 }
 .photography__btn:hover, .photography__btn:focus {
   background-color: #5221E6;
-}/*# sourceMappingURL=index.css.map */
+
+
+}
+
+.work-exp {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.work-exp__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #8491a0;
+}
+
+.work-exp__heading {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #ffffff;
+}
+
+.work-exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-exp-list__number {
+  font-weight: 400;
+  font-size: 117px;
+  line-height: 141px;
+  color: #8491a0;
+}
+
+.work-exp-list__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.work-exp-list__title--green {
+  color: #3cc74e;
+}
+
+.work-exp-list__title--blue {
+  color: #609bff;
+}
+
+.work-exp-list__title--pink {
+  color: #e95d90;
+}
+
+.work-exp-list__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8491a0;
+
