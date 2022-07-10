@@ -1,22 +1,23 @@
 // breakpoints
-@media screen and (min-width: 360px) {
-  .container {
-    width: 360px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-  }
-}
+// @media screen and (min-width: 360px) {
+//   .container {
+//     width: 360px;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .container {
+//     width: 768px;
+//   }
+// }
+// @media screen and (min-width: 1440px) {
+//   .container {
+//     width: 1440px;
+//   }
+// }
 
 .philosophy__container {
   display: flex;
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -35,6 +36,7 @@
   font-size: 32px;
   line-height: 1.18;
   color: $colorLevel1;
+
   @include tablet {
     font-size: 55px;
     line-height: 1.2;
