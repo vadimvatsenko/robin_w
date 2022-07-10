@@ -195,6 +195,16 @@ section {
   .mob-menu {
     display: none;
   }
+
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -321,6 +331,7 @@ section {
   color: #8491a0;
 }
 
+
 @media screen and (min-width: 360px) {
   .container {
     width: 360px;
@@ -392,6 +403,82 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+
+=======
+
+.skillset__title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+@media screen and (min-width: 768px) {
+  .skillset__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.skillset__text {
+  color: #8491a0;
+  line-height: 1.5;
+  padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .skillset__text {
+    font-size: 18px;
+  }
+}
+
+.skillset-list {
+  margin-top: 69px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) {
+  .skillset-list__item {
+    width: calc((100% - 48px) / 2);
+  }
+}
+.skillset-list__title {
+  margin-top: 24px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.skillset-list__text {
+  margin-top: 12px;
+  color: #8491a0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .skillset-wrap {
+    display: flex;
+  }
+  .skillset-list {
+    margin-top: 0;
+    margin-left: 72px;
+  }
+}
+.photography {
+  padding: 48px 20px;
+}
+
+.photography__text {
+  display: block;
+  color: #8491a0;
+  margin-top: 24px;
+}
+
+.photography__btn-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .photography__btn {
   margin-right: 24px;

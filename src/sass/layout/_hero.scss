@@ -1,7 +1,76 @@
 .hero {
-    min-height: 362px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 288px;
+    width: 100%;
     background-image: url(../images/hero-mob.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-size: 360px 288px;
 
+    @include retinaBgImg {
+        background-image: url(../images/hero-mob-2x.jpg);
+    }
+
+    @include tablet {
+        min-height: 814px;
+        background-image: url(../images/hero-tab.jpg);
+        background-position: left center;
+        background-size: 384px 650px;
+
+        @include retinaBgImg {
+            background-image: url(../images/hero-tab-2x.jpg);
+        }
+    }
+}
+
+.hero-mobile {
+    @include tablet {
+        display: none;
+    }
+}
+
+.hero__img {
+    // position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.19;
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 1.20;
+    }
+}
+
+.hero__title--gray {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hero__subtitle {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+
+
+
+}
+
+.hero-tablet {
+    width: 418px;
+    margin-left: auto;
+    display: block;
+
+
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
