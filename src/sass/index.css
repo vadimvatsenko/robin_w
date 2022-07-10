@@ -449,9 +449,14 @@ section {
 }
 
 .philosophy__text {
-  margin-bottom: 90px;
+  margin-bottom: 67px;
   font-size: 18px;
   color: #5b6876;
+}
+@media screen and (min-width: 1440px) {
+  .philosophy__text {
+    margin-bottom: 134px;
+  }
 }
 
 .philosophy__link {
@@ -461,6 +466,20 @@ section {
   line-height: 1.5;
   color: #181823;
   border-bottom: 1px solid #8491a0;
+}
+
+.team__picture {
+  min-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .team__picture {
+    min-width: 384px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .team__picture {
+    min-width: 720px;
+  }
 }
 
 .skillset__title {
@@ -520,6 +539,32 @@ section {
     margin-top: 0;
     margin-left: 72px;
   }
+}
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.container--variable {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.clients__item {
+  width: 50%;
+  display: block;
+  min-width: 180px;
+  height: 140px;
+  border: 1px solid #434343;
+}
+
+.clients__link {
+  display: flex;
+  height: 100%;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1440px) {
