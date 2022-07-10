@@ -270,6 +270,7 @@ section {
   }
 }
 
+
 @media screen and (min-width: 1440px) {
   .hero {
     margin: 0 auto;
@@ -287,6 +288,7 @@ section {
     background-image: url(../images/hero-2x.jpg);
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .hero-mobile {
@@ -333,7 +335,6 @@ section {
   .hero-tablet {
     display: none;
   }
-
 
 }
 @media screen and (min-width: 1440px) {
@@ -524,6 +525,75 @@ section {
     margin-left: 72px;
   }
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials-cont {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials__main-text--cont {
+    margin-right: 23px;
+  }
+}
+
+.testimonials__text {
+  margin-top: 16px;
+  margin-bottom: 40px;
+  color: #8491a0;
+}
+
+.testimonials__underline-text {
+  display: inline;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #8491a0;
+}
+
+.testimonials__list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  max-width: 332px;
+}
+@media screen and (min-width: 1440px) {
+  .testimonials__list {
+    max-width: 636px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonials__list {
+    margin-top: 0;
+  }
+}
+
+.testimonials__item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.testimonials__thumb--text-cont {
+  padding: 32px;
+  border: 1px solid #5b6876;
+}
+
+.testimonials__thumb--text {
+  margin-bottom: 64px;
+}
+
+.testimonials__thumb--name {
+  font-weight: 700;
+  color: #8491a0;
+}
+
+.testimonials__thumb--prof {
+  color: #8491a0;
+
 .clients__list {
   display: flex;
   flex-wrap: wrap;
@@ -549,6 +619,7 @@ section {
   min-width: 100%;
   align-items: center;
   justify-content: center;
+
 }
 
 .photography {
