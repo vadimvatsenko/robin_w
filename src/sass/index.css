@@ -567,6 +567,140 @@ section {
   justify-content: center;
 }
 
+@media screen and (min-width: 1440px) {
+  .clients {
+    padding-top: 0;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+
+.container--variable {
+  padding-left: 0;
+  padding-right: 0;
+
+  max-width: 100vw;
+}
+
+.clients__item {
+  display: block;
+  width: 100vw;
+  height: 140px;
+  border: 1px solid #434343;
+}
+@media screen and (min-width: 320px) {
+  .clients__item {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .clients__item {
+    width: 33.3333333333%;
+  }
+}
+
+.clients__link {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.photography {
+  padding: 48px 20px;
+
+}
+
+.clients__item {
+  width: 50%;
+  display: block;
+  min-width: 180px;
+  height: 140px;
+  border: 1px solid #434343;
+}
+
+.clients__link {
+  display: flex;
+  height: 100%;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fbe4ff;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .instagram {
+    flex-direction: column;
+  }
+}
+
+.instagram__wrap-text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .instagram__wrap-text {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .instagram__wrap-text {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.instagram__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #181823;
+}
+@media screen and (min-width: 768px) {
+  .instagram__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.instagram__text {
+  margin-bottom: 134px;
+  font-size: 18px;
+  color: #5b6876;
+}
+
+.instagram__link {
+  width: 128px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #181823;
+  border-bottom: 1px solid #8491a0;
+}
+
+@media screen and (min-width: 768px) {
+  .instagram__image {
+    min-width: 384px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .instagram__image {
+    min-width: 720px;
+  }
+}
+
 img {
   display: block;
   width: 100%;
@@ -640,6 +774,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 .photography__text {
