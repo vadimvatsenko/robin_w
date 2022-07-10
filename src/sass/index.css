@@ -270,17 +270,37 @@ section {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .hero {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 814px;
+    background-image: url(../images/hero.jpg);
+    background-position: left center;
+    background-size: 750px 650px;
+    border-bottom: 1px dashed blue;
+    border-width: 5px;
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-mobile {
     display: none;
   }
 }
 
+
 .hero__img {
   left: 0;
   top: 0;
   width: 100vw;
 }
+
 
 .hero__title {
   font-weight: 700;
@@ -313,6 +333,14 @@ section {
   .hero-tablet {
     display: none;
   }
+
+
+}
+@media screen and (min-width: 1440px) {
+  .hero-tablet {
+    width: 738px;
+  }
+
 }
 
 .work-exp__title {
@@ -389,6 +417,53 @@ section {
 .work-exp-list__text {
   font-size: 16px;
   color: #8491a0;
+}
+
+.philosophy {
+  background-color: #fff3e4;
+}
+
+.philosophy__container {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .philosophy__container {
+    flex-direction: column;
+  }
+}
+
+.philosophy__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.philosophy__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #181823;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.philosophy__text {
+  font-size: 18px;
+  color: #5b6876;
+}
+
+.philosophy__link {
+  width: 116px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #181823;
+  border-bottom: 1px solid #8491a0;
 }
 
 .skillset__title {
