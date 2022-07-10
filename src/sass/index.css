@@ -355,7 +355,7 @@ section {
   display: flex;
   gap: 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .work-exp-list {
     flex-direction: column;
   }
