@@ -2,15 +2,61 @@
     <div class="container header__container">
         <nav class="header__nav">
             <a href="./index.html" class="logo">
-                <img src="./images/icons/logo.svg" alt="logo" width="78px" height="24">
+                <svg class="logo__svg" width="78" height="24">
+                    <use href="./images/icons/SVG-sprite.svg#icon-logo" class="logo__icon"></use>
+                </svg>
             </a>
+            <button class="menu-open-btn">
+                <svg width="24" height="24">
+                    <use href="./images/icons/SVG-sprite.svg#icon-burger"></use>
+                </svg>
+
+            </button>
+
             <ul class="menu">
                 <li class="menu__item"><a href="" class="memu__link">Experience</a></li>
                 <li class="menu__item"><a href="" class="memu__link">Work</a></li>
                 <li class="menu__item"><a href="" class="memu__link">Photography</a></li>
             </ul>
-
         </nav>
-        <button class="button header__button" type="button">Contact</button>
+        <button class="header__button" type="button">Contact</button>
+        <div class="mob-menu is-hidden">
+            <button class="menu-close-btn">
+                <svg width="24" height="24">
+                    <use href="./images/icons/SVG-sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mob-menu__items">
+                <li class="mob-menu__item"><a href="" class="mob-menu__link">Experience</a></li>
+                <li class="mob-menu__item"><a href="" class="mob-menu__link">Work</a></li>
+                <li class="mob-menu__item"><a href="" class="mob-menu__link">Photography</a></li>
+            </ul>
+
+            <button class="header__button mob-menu__button" type="button">Contact</button>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="" class="social__link">
+                        <svg class="social__svg" width="24" height="24">
+                            <use href="./images/icons/SVG-sprite.svg#icon-twitter-logo" class="social__icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="" class="social__link">
+                        <svg class="social__svg" width="24" height="24">
+                            <use href="./images/icons/SVG-sprite.svg#icon-dribbble-logo" class="social__icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="" class="social__link">
+                        <svg class="social__svg" width="24" height="24">
+                            <use href="./images/icons/SVG-sprite.svg#icon-linkedin-logo" class="social__icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </header>
