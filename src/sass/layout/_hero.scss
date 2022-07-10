@@ -34,8 +34,8 @@
         background-image: url(../images/hero.jpg);
         background-position: left center;
         background-size: 750px 650px;
-        border-bottom: 1px dashed blue;
-        border-width: 5px;
+        // border-bottom: 1px dashed blue;
+        // border-width: 5px;
 
         @include retinaBgImg {
             background-image: url(../images/hero-2x.jpg);
