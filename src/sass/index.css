@@ -195,6 +195,16 @@ section {
   .mob-menu {
     display: none;
   }
+
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -321,6 +331,81 @@ section {
   color: #8491a0;
 }
 
+
+@media screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+.philosophy__container {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .philosophy__container {
+    flex-direction: column;
+  }
+}
+
+.philosophy__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.philosophy__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #181823;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__title {
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.philosophy__text {
+  font-size: 18px;
+  color: #5b6876;
+}
+
+.philosophy__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #181823;
+  border-bottom: 1px solid #8491a0;
+}
+
+.photography {
+  padding: 48px 20px;
+}
+
+.photography__text {
+  display: block;
+  color: #8491a0;
+  margin-top: 24px;
+}
+
+.photography__btn-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+=======
+
 .skillset__title {
   color: #ffffff;
   font-size: 32px;
@@ -393,6 +478,7 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .photography__btn {
   margin-right: 24px;
