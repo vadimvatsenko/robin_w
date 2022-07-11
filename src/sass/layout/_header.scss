@@ -1,3 +1,12 @@
+header {
+    @include desktop {
+        background-image: linear-gradient(to right,
+                $colorBase 40%,
+                $colorLevel1 40%,
+                $colorLevel1 100%)
+    }
+}
+
 .logo {
     padding-top: 24px;
     padding-bottom: 24px;
