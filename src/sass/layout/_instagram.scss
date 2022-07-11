@@ -1,7 +1,16 @@
 .instagram {
   padding-top: 0;
   padding-bottom: 0;
+
   background-color: #fbe4ff;
+}
+
+.instagram__container {
+  @media screen and (max-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   display: flex;
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -11,10 +20,12 @@
 .instagram__wrap-text {
   padding-top: 48px;
   padding-bottom: 48px;
+
   @include tablet {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
   @include desktop {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -28,6 +39,7 @@
   font-size: 32px;
   line-height: 1.18;
   color: $colorLevel1;
+
   @include tablet {
     font-size: 55px;
     line-height: 1.2;
@@ -35,7 +47,15 @@
 }
 
 .instagram__text {
-  margin-bottom: 134px;
+  margin-bottom: 125px;
+
+  @include tablet {
+    margin-bottom: 133px;
+  }
+
+  @include desktop {
+    margin-bottom: 134px;
+  }
 
   font-size: 18px;
   color: $colorPhilosophyText;
@@ -52,9 +72,12 @@
 }
 
 .instagram__image {
+  min-width: 320px;
+
   @include tablet {
     min-width: 384px;
   }
+
   @include desktop {
     min-width: 720px;
   }
