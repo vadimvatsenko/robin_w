@@ -31,7 +31,10 @@
         margin: 0 auto;
         max-width: 1440px;
         min-height: 814px;
+
+
         background-image: url(../images/hero.jpg);
+
         background-position: left center;
         background-size: 750px 650px;
         // border-bottom: 1px dashed blue;
@@ -89,5 +92,6 @@
 
     @include desktop {
         width: 738px;
+
     }
 }

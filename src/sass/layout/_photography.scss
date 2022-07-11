@@ -13,6 +13,7 @@ img {
   color: #8491a0;
   margin-top: 24px;
   max-width: 689px;
+
   @media screen and (min-width: 1440px) {
     max-width: 588px;
   }
@@ -25,6 +26,7 @@ img {
   grid-template-columns: 148px 148px;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -34,10 +36,12 @@ img {
   padding: 12px 16px;
   border: 1px solid $colorPrimary;
   background-color: #000000;
+
   &:hover,
   &:focus {
     background-color: $colorPrimary;
   }
+
   @media screen and (max-width: 767px) {
     width: 148px;
     height: 51px;
@@ -49,6 +53,7 @@ img {
   @media screen and (max-width: 767px) {
     max-width: 480px;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -63,4 +68,3 @@ img {
     }
   }
 }
-
