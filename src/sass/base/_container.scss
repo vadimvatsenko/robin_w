@@ -1,11 +1,18 @@
 // Контейнер
 .container {
-  max-width: 360px;
-  padding-right: 15px;
-  padding-left: 15px;
 
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 360px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        max-width: 768px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
 
   @include tablet {
     max-width: 768px;

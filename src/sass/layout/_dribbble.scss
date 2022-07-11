@@ -1,0 +1,76 @@
+.dribbble {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include desktop {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.dribbble__container {
+    @include desktop {
+        padding-left: 182px;
+        padding-right: 182px;
+    }
+}
+
+.dribbble__top-text {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+    color: $colorText;
+    margin-bottom: 24px;
+}
+
+.dribbble__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $colorTextGrey;
+    margin-bottom: 40px;
+
+    @include desktop {
+        max-width: 636px;
+    }
+}
+
+.dribbble__link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $colorText;
+    margin-bottom: 64px;
+    border-bottom: 1px solid #8491A0;
+
+    @include tablet {
+        margin-bottom: 120px;
+    }
+}
+
+.dribbble__wrap-img {
+    @include desktop {
+        padding-left: 182px;
+        padding-right: 182px;
+    }
+}
+
+.dribbble__icon {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding-left: 16px;
+    background: #181823;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.dribbble__img {
+    border-radius: 0px 0px 8px 8px;
+}
+

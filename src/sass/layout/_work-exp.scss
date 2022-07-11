@@ -23,7 +23,7 @@
 .work-exp-list {
   display: flex;
   gap: 40px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
   @include desktop {

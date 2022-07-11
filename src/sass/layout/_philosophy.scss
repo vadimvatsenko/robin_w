@@ -1,32 +1,35 @@
-// breakpoints
-// @media screen and (min-width: 360px) {
-//   .container {
-//     width: 360px;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .container {
-//     width: 768px;
-//   }
-// }
-// @media screen and (min-width: 1440px) {
-//   .container {
-//     width: 1440px;
-//   }
-// }
+.philosophy {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background-color: $colorPeachAccent;
+}
 
 .philosophy__container {
-  display: flex;
+  @media screen and (max-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-  @media screen and (max-width: 768px) {
+  display: flex;
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 }
 
-.philosophy__wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.philosophy__wrap-text {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .philosophy__title {
@@ -44,14 +47,33 @@
 }
 
 .philosophy__text {
+  margin-bottom: 67px;
+
+  @include desktop {
+    margin-bottom: 134px;
+  }
+
   font-size: 18px;
   color: $colorPhilosophyText;
 }
 
 .philosophy__link {
+  width: 116px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: $colorLevel1;
   border-bottom: 1px solid $colorTextGrey;
+}
+
+.philosophy__picture {
+  min-width: 320px;
+
+  @include tablet {
+    min-width: 384px;
+  }
+
+  @include desktop {
+    min-width: 720px;
+  }
 }

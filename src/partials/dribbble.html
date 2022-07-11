@@ -1,6 +1,31 @@
 <section class="dribbble">
-    <div class="container">
-        dribbble
+    <div class="dribbble__container container">
+        <h2 class="dribbble__top-text">Dribbble</h2>
+        <p class="dribbble__text">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes
+            and comments are appreciated.</p>
+        <a class="dribbble__link" href="#">Follow me on Dribbble</a>
+    </div>
+
+    <div class="dribbble__wrap-img container">
+        <span class="dribbble__icon">
+            <svg class="icon-dots" width="48" height="12">
+                <use href="./images/icons/SVG-sprite.svg#icon-dots"></use>
+            </svg>
+        </span>
+        <picture>
+            <source srcset="./images/dribbble.jpg 1x,
+            ./images/dribbble-2x.jpg 2x" media="(min-width: 1440px)" />
+            <source srcset="
+                ./images/dribbble-tab.jpg 1x,
+                ./images/dribbble-tab-2x.jpg 2x
+            " media="(min-width: 768px)" />
+            <source srcset="
+                ./images/dribbble-mob.jpg 1x,
+                ./images/dribbble-mob-2x.jpg 2x
+            " media="(min-width: 320px)" />
+            <img class="dribbble__img" src="./images/dribbble.jpg" alt="Фото приложений" width="1440" />
+        </picture>
+
     </div>
 
 </section>
