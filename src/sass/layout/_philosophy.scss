@@ -1,7 +1,16 @@
 .philosophy {
   padding-top: 0;
   padding-bottom: 0;
+
   background-color: $colorPeachAccent;
+}
+
+.philosophy__container {
+  @media screen and (max-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   display: flex;
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -11,6 +20,7 @@
 .philosophy__wrap-text {
   padding-top: 48px;
   padding-bottom: 48px;
+
   @include tablet {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -38,9 +48,11 @@
 
 .philosophy__text {
   margin-bottom: 67px;
+
   @include desktop {
     margin-bottom: 134px;
   }
+
   font-size: 18px;
   color: $colorPhilosophyText;
 }
@@ -54,11 +66,13 @@
   border-bottom: 1px solid $colorTextGrey;
 }
 
-.team__picture {
+.philosophy__picture {
   min-width: 320px;
+
   @include tablet {
     min-width: 384px;
   }
+
   @include desktop {
     min-width: 720px;
   }
