@@ -1,6 +1,13 @@
 <section class="hero">
-    <div class="container">
-        <div class="hero-tablet">
+    <div class="container hero__container">
+        <picture>
+            <source srcset="./images/hero.jpg 1x, ./images/hero-2x.jpg 2x" media="(min-width:1440px)">
+            <source srcset="./images/hero-tab.jpg 1x, ./images/hero-tab-2x.jpg 2x" media="(min-width:768px)">
+            <source srcset="./images/hero-mob.jpg 1x, ./images/hero-mob-2x.jpg 2x" media="(min-width:360px)">
+            <img class="hero__img" src="./images/hero.jpg" alt="robin.w" width="750">
+        </picture>
+
+        <div class="hero__descr">
             <h1 class="hero__title">I’m Robin Williams.
                 A Product Designer <span class="hero__title--gray">based in Italy.</span>
             </h1>
@@ -9,17 +16,5 @@
                 a great project that needs some
                 amazing skills, I’m your guy.</p>
         </div>
-
-    </div>
-</section>
-<section class="hero-mobile">
-    <div class="container">
-        <h1 class="hero__title">I’m Robin Williams.
-            A Product Designer <span class="hero__title--gray">based in Italy.</span>
-        </h1>
-        <p class="hero__subtitle">I’m probably the most passionate designer you will ever get to work with. If you
-            have
-            a great project that needs some
-            amazing skills, I’m your guy.</p>
     </div>
 </section>

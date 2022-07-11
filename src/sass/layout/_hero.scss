@@ -1,56 +1,53 @@
 .hero {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 288px;
-    width: 100%;
-    background-image: url(../images/hero-mob.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-size: 360px 288px;
-
-    @include retinaBgImg {
-        background-image: url(../images/hero-mob-2x.jpg);
-    }
-
-    @include tablet {
-        min-height: 814px;
-        background-image: url(../images/hero-tab.jpg);
-        background-position: left center;
-        background-size: 384px 650px;
-
-
-
-        @include retinaBgImg {
-            background-image: url(../images/hero-tab-2x.jpg);
-        }
+    @media screen and (max-width:767px) {
+        padding-top: 0;
     }
 
     @include desktop {
-        margin: 0 auto;
-        max-width: 1440px;
-        min-height: 814px;
-        background-image: url(../images/hero.jpg);
-        background-position: left center;
-        background-size: 750px 650px;
-        border-bottom: 1px dashed blue;
-        border-width: 5px;
-
-        @include retinaBgImg {
-            background-image: url(../images/hero-2x.jpg);
-        }
+        background-image: linear-gradient(to right,
+                $colorBase 40%,
+                $colorLevel1 40%,
+                $colorLevel1 100%)
     }
 }
 
+.hero__container {
+    padding-right: 0;
+    padding-left: 0;
 
-.hero-mobile {
     @include tablet {
-        display: none;
+        display: flex;
+        align-items: center;
     }
 }
 
+.hero__img {
+    @include tablet {
+        max-width: 348px;
+    }
 
+    @include desktop {
+        max-width: 750px;
+    }
+}
+
+.hero__descr {
+    @media screen and (max-width:767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 48px;
+    }
+
+    @include tablet {
+        max-width: 408px;
+        position: absolute;
+        right: 40px;
+    }
+
+    @include desktop {
+        max-width: 738px;
+    }
+}
 
 .hero__title {
     font-weight: 700;
@@ -71,23 +68,4 @@
     margin-top: 16px;
     font-size: 18px;
     line-height: 1.5;
-
-
-
-}
-
-.hero-tablet {
-    width: 418px;
-    margin-left: auto;
-    display: block;
-
-
-
-    @media screen and (max-width:767px) {
-        display: none;
-    }
-
-    @include desktop {
-        width: 738px;
-    }
 }
