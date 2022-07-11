@@ -19,7 +19,17 @@
                 <li class="menu__item"><a href="#photography" class="memu__link">Photography</a></li>
             </ul>
         </nav>
-        <button class="header__button" type="button">Contact</button>
+        <button class="header__button" type="button" data-modal-open>Contact</button>
+        <!-- Модально окно -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal__close" data-modal-close>
+                    <svg width="24" height="24">
+                        <use href="./images/icons/SVG-sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
         <div class="mob-menu is-hidden">
             <button class="menu-close-btn">
                 <svg width="24" height="24">
@@ -34,26 +44,29 @@
                 </li>
             </ul>
 
-            <button class="header__button mob-menu__button" type="button">Contact</button>
+            <button class="header__button mob-menu__button" type="button" data-modal-open>Contact</button>
             <ul class="social">
                 <li class="social__item">
                     <a href="" class="social__link">
                         <svg class="social__svg" width="24" height="24">
-                            <use href="./images/icons/SVG-sprite.svg#icon-twitter-logo" class="social__icon"></use>
+                            <use href="./images/icons/SVG-sprite.svg#icon-twitter-logo" class="social__icon">
+                            </use>
                         </svg>
                     </a>
                 </li>
                 <li class="social__item">
                     <a href="" class="social__link">
                         <svg class="social__svg" width="24" height="24">
-                            <use href="./images/icons/SVG-sprite.svg#icon-dribbble-logo" class="social__icon"></use>
+                            <use href="./images/icons/SVG-sprite.svg#icon-dribbble-logo" class="social__icon">
+                            </use>
                         </svg>
                     </a>
                 </li>
                 <li class="social__item">
                     <a href="" class="social__link">
                         <svg class="social__svg" width="24" height="24">
-                            <use href="./images/icons/SVG-sprite.svg#icon-linkedin-logo" class="social__icon"></use>
+                            <use href="./images/icons/SVG-sprite.svg#icon-linkedin-logo" class="social__icon">
+                            </use>
                         </svg>
                     </a>
                 </li>
