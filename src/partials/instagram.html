@@ -1,6 +1,6 @@
 <section class="instagram">
   <div class="instagram__container container">
-    <div class="instagram__wrap-text">
+    <div class="instagram__wrap-text container">
       <h2 class="instagram__title">Instagram</h2>
       <p class="instagram__text">
         If you area a person who enjoys photography, then I highly recommend
@@ -9,21 +9,21 @@
       </p>
       <a href="" class="instagram__link">Follow me on IG</a>
     </div>
+    <picture class="instagram__picture instagram__picture-container">
+      <source
+        srcset="./images/instagram.jpg 1x, ./images/instagram-2x.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="./images/instagram-tab.jpg 1x, ./images/instagram-tab-2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="instagram__image"
+        src="./images/instagram-mob.jpg"
+        alt="стекляный шар в руке"
+        width="360"
+      />
+    </picture>
   </div>
-  <picture>
-    <source
-      srcset="./images/instagram.jpg 1x, ./images/instagram-2x.jpg 2x"
-      media="(min-width: 1440px)"
-    />
-    <source
-      srcset="./images/instagram-tab.jpg 1x, ./images/instagram-tab-2x.jpg 2x"
-      media="(min-width: 768px)"
-    />
-    <img
-      class="instagram__image"
-      src="./images/instagram-mob.jpg"
-      alt="стекляный шар в руке"
-      width="360"
-    />
-  </picture>
 </section>
