@@ -1,0 +1,78 @@
+.form {
+  &__title {
+    margin-bottom: 16px;
+
+    @include tablet {
+      font-size: 55px;
+      line-height: 1.2;
+    }
+  }
+
+  @include desktop {
+    max-width: 1076px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    display: block;
+    color: $colorTextGrey;
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background-color: $colorPrimary;
+    width: 100%;
+    padding: 24px 32px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  @include tablet {
+    display: flex;
+    gap: 24px;
+
+    &__item {
+      width: calc((100% - 24px) / 2);
+    }
+  }
+}
+
+.label {
+  display: block;
+  margin-bottom: 40px;
+
+  &__title {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: $colorLevel1;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: $colorText;
+  }
+
+  &__mesage {
+    height: 100px;
+    resize: none;
+  }
+}
