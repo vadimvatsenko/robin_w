@@ -277,6 +277,10 @@ section {
     background-image: url(../images/hero.jpg);
     background-position: left center;
     background-size: 750px 650px;
+
+    border-bottom: 1px dashed blue;
+    border-width: 5px;
+
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
@@ -405,6 +409,14 @@ section {
   color: #8491a0;
 }
 
+
+.philosophy__container {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .philosophy__container {
+    flex-direction: column;
+
 .philosophy {
   padding-top: 0;
   padding-bottom: 0;
@@ -431,6 +443,7 @@ section {
   .philosophy__wrap-text {
     padding-top: 120px;
     padding-bottom: 120px;
+
   }
 }
 
@@ -468,6 +481,7 @@ section {
   border-bottom: 1px solid #8491a0;
 }
 
+
 .team__picture {
   min-width: 320px;
 }
@@ -481,6 +495,7 @@ section {
     min-width: 720px;
   }
 }
+
 
 .skillset__title {
   color: #ffffff;
@@ -540,6 +555,86 @@ section {
     margin-left: 72px;
   }
 }
+
+.dribbble {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .dribbble {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dribbble {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .dribbble__container {
+    padding-left: 182px;
+    padding-right: 182px;
+  }
+}
+
+.dribbble__top-text {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.dribbble__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #8491a0;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .dribbble__text {
+    max-width: 636px;
+  }
+}
+
+.dribbble__link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 64px;
+  border-bottom: 1px solid #8491A0;
+}
+@media screen and (min-width: 768px) {
+  .dribbble__link {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .dribbble__wrap-img {
+    padding-left: 182px;
+    padding-right: 182px;
+  }
+}
+
+.dribbble__icon {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding-left: 16px;
+  background: #181823;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.dribbble__img {
+  border-radius: 0px 0px 8px 8px;
+=======
 .clients__list {
   display: flex;
   flex-wrap: wrap;
@@ -609,6 +704,7 @@ section {
   width: 100%;
   align-items: center;
   justify-content: center;
+
 }
 
 .photography {
