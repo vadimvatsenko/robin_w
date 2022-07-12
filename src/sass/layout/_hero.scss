@@ -1,20 +1,51 @@
 .hero {
-    @media screen and (max-width:767px) {
-        padding-top: 0;
+
+    @include mobile {
+        position: relative;
+        padding-bottom: 48px;
+        min-height: 652px;
+        background-image: url(../images/hero-mob.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+
+        @include retinaBgImg {
+            background-image: url(../images/hero-mob-2x.jpg);
+            background-size: 360px 288px
+        }
+    }
+
+    @include tablet {
+        width: 768px;
+        margin: 0 auto;
+        background-image: url(../images/hero-tab.jpg);
+        background-position: left center;
+        background-size: 384px 650px
     }
 
     @include desktop {
-        background-image: linear-gradient(to right,
+        min-height: 814px;
+        width: 1440px;
+        background-image: url(../images/hero.jpg), linear-gradient(to right,
                 $colorBase 40%,
                 $colorLevel1 40%,
-                $colorLevel1 100%)
+                $colorLevel1 100%);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 750px 650px, 100%;
+
+        @include retinaBgImg {
+            background-image: url(../images/hero-2x.jpg), linear-gradient(to right,
+                    $colorBase 40%,
+                    $colorLevel1 40%,
+                    $colorLevel1 100%);
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: 750px 650px, 100%;
+        }
     }
 }
 
 .hero__container {
-    padding-right: 0;
-    padding-left: 0;
-
     @include tablet {
         display: flex;
         align-items: center;
@@ -32,20 +63,25 @@
 }
 
 .hero__descr {
-    @media screen and (max-width:767px) {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 48px;
+    @include mobile {
+        position: absolute;
+        bottom: 48px;
+        width: 320px;
+
     }
 
     @include tablet {
-        max-width: 408px;
-        position: absolute;
-        right: 40px;
+        position: static;
+        width: 408px;
+        margin-left: auto;
+
     }
 
     @include desktop {
-        max-width: 738px;
+        display: block;
+        width: 738px;
+        margin-left: auto;
+
     }
 }
 

@@ -1,5 +1,7 @@
 header {
     @include desktop {
+        width: 1440px;
+        margin: 0 auto;
         background-image: linear-gradient(to right,
                 $colorBase 40%,
                 $colorLevel1 40%,
@@ -160,7 +162,7 @@ header {
 
 .modal {
     width: 600px;
-    height: 600px;
+    height: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -168,3 +170,5 @@ header {
     background-color: $colorBase;
     border-radius: 5px;
 }
+
+// 
